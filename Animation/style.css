@@ -1,0 +1,19 @@
+:root{
+    /* Global Variable */
+    --violet:#987acc;
+}
+.container{
+    border: 1px solid black;
+    background-color: hotpink;
+    width: 300px;
+    height: 300px;
+}
+
+.box{
+    border: 2px solid yellow;
+    background-color: aqua;
+    /* color: #987acc; */
+    /* Local Variable */
+    /* --violet:#987acc; */
+    color: var(--violet);
+}

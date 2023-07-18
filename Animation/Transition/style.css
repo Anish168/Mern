@@ -1,0 +1,39 @@
+.container {
+    border: 1px solid red;
+    height: 500px;
+    width: 500px;
+    background-color: greenyellow;
+    display: flex;
+}
+
+.box {
+    border: 2px solid orange;
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+    background-color: aqua;
+    transition: 2s;
+    /* transition-property: all; isme dalte h ki kiske upr transition apply krna h but all, is baad pracatice */
+    /* transition-property: all; */
+    /* transition-delay: 2s; kitne tym baad transition start hone wala h */
+    /* transition-duration: 2s;kitne tym ge ek state se dusre state jane k liye */
+    /* transition: transition-property transition-duration transition-timing-function transition-delay */
+    /* transition: transform 5s ease; */
+    /* transition: transform 2s ease-in-out; */
+    /* transition: transform 2s cubic-bezier(1, 0.44, 0.27, 0.61) 1s; */
+    /* Or we can write in also */
+    /* transition-property: transform;
+    transition-duration: 2s;
+    transition-timing-function:cubic-bezier(1, 0.44, 0.27, 0.61) ;
+    transition-delay: 1s; */
+    transition: transform background-color 2s ease 1s;
+}
+
+.box:hover {
+    /* background-color: hotpink;
+    transform: rotate(360deg); */
+    /* transform: translateX(500px); */
+    background-color: hotpink;
+    transform: translateX(500px) rotate(360deg);
+    
+}

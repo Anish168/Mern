@@ -1,0 +1,54 @@
+.container{
+    border: 2px solid red;
+    background-color: hotpink;
+    height: 215px;
+    width: 100%;
+}
+
+.box{
+    height: 213px;
+    width: 213px;
+    background-color: yellow;
+    border: 3px solid red;
+
+    animation-name: jha;
+    animation-duration: 3s;
+    animation-iteration-count: 4;
+    /* animation-iteration-count: infinite; */
+    animation-timing-function: ease-in-out;
+    animation-delay: 1s;
+    animation-direction: alternate;
+}
+
+@keyframes jha {
+    0%{
+        width: 212px;
+        background-color: yellow;
+    }
+    30%{
+        width: 30%;
+        background-color: yellowgreen;
+    }
+    70%{
+        width: 75%;
+        background-color: darkorange;
+    }
+    100%
+    {
+        width: 100%;
+        background-color: deeppink;
+    }
+}
+
+
+
+
+/* @keyframes jha {
+    from{
+        width: 212px;;
+    }
+
+    to{
+        width: 100%;
+    }
+} */
